@@ -1,0 +1,12 @@
+* {
+    font-family: "Exo 2", sans-serif;
+}
+
+.hero-image-container img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.tagline-image-container img {
+    height: 200px;
+}
