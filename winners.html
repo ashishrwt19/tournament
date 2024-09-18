@@ -1,0 +1,184 @@
+giout <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourney</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Tourney</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="./tournament.html">Tournaments</a>
+              <a class="nav-link active" href="./winners.html">Winnings</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="home-hero" class="container-fluid py-5 px-2 bg-primary">
+      <div class="main-banner text-center">
+        <h1 class="fw-bold">Winners</h1>
+      </div>
+    </section>
+    <section id="home-tagline" class="py-5 container d-flex flex-column gap-2">
+      <div
+        class="d-flex justify-content-between align-items-center border border-2 p-3 rounded bg-light"
+      >
+        <div class="fw-bold">
+          <div>Name: Pubg Tournament</div>
+          <div>Map: Erangel</div>
+          <div>Date: 20 October 2024s</div>
+        </div>
+        <div>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            onclick="winnings(1)"
+          >
+            Winners
+          </button>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between align-items-center border border-2 p-3 rounded bg-light"
+      >
+        <div class="fw-bold">
+          <div>Name: Pubg Tournament</div>
+          <div>Map: Erangel</div>
+          <div>Date: 20 October 2024s</div>
+        </div>
+        <div>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            onclick="winnings(2)"
+          >
+            Winners
+          </button>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between align-items-center border border-2 p-3 rounded bg-light"
+      >
+        <div class="fw-bold">
+          <div>Name: Pubg Tournament</div>
+          <div>Map: Erangel</div>
+          <div>Date: 20 October 2024s</div>
+        </div>
+        <div>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            onclick="winnings(3)"
+          >
+            Winners
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WINNERS LIST VIEW -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Tournament Winners.
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="d-flex flex-column mb-3 git">
+            <div class="p-2 bg-info w-100">1st:-</div>
+            <div class="p-2 bg-warning w-100">2nd:-</div>
+            <div class="p-2 bg-light w-100">3rd:-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="entriesBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="entriesBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="entriesBackdropLabel">Entries</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex flex-column gap-2">
+            <div id="entries"></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
